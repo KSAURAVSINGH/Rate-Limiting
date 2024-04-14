@@ -1,6 +1,6 @@
 {
   "name": "rate-limiting",
-  "version": "1.0.0",
+  "version": "2.0.0",
   "description": "Rate Limiting",
   "main": "index.js",
   "scripts": {
@@ -22,6 +22,8 @@
     "dotenv": "^16.4.5",
     "express": "^4.19.2",
     "express-rate-limit": "^7.2.0",
-    "nodemon": "^3.1.0"
+    "moment": "^2.30.1",
+    "nodemon": "^3.1.0",
+    "redis": "^4.6.13"
   }
 }

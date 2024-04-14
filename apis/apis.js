@@ -1,9 +1,9 @@
 const welcomeComp = require('../routes/components/welcome')
-const rateLimiter = require('../middlewares/rateLimit')
+const {customRateLimiting} = require('../middlewares/rateLimit')
 
 const handleApis = (app) =>{
-    app.get('/', rateLimiter, welcomeComp.welcomeComp);
-    app.get('/data', rateLimiter, welcomeComp.fetchData);
+    app.get('/', customRateLimiting, welcomeComp.welcomeComp);
+    app.get('/data', customRateLimiting, welcomeComp.fetchData);
 }
 
 module.exports = handleApis;

@@ -6,6 +6,7 @@ const fetchData = (req, res) =>{
     res.json({
         message: 'Find the most recent data here'
     })
+
 }
 
 module.exports = {
